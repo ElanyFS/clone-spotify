@@ -6,5 +6,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     target: 'esnext'
+  },
+  server: {
+    host: '0.0.0.0',  // Faz o Vite ouvir em todas as interfaces
+    port: 3000         // Ou outra porta desejada, mas normalmente a porta 3000 é usada
   }
 });
